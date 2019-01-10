@@ -1,0 +1,7 @@
+C:\Users\калабаева\source\repos\PracticeWork27_12_18\PracticeWork27_12_18\bin\Debug\PracticeWork27_12_18.exe.config
+C:\Users\калабаева\source\repos\PracticeWork27_12_18\PracticeWork27_12_18\bin\Debug\PracticeWork27_12_18.exe
+C:\Users\калабаева\source\repos\PracticeWork27_12_18\PracticeWork27_12_18\bin\Debug\PracticeWork27_12_18.pdb
+C:\Users\калабаева\source\repos\PracticeWork27_12_18\PracticeWork27_12_18\obj\Debug\PracticeWork27_12_18.csprojAssemblyReference.cache
+C:\Users\калабаева\source\repos\PracticeWork27_12_18\PracticeWork27_12_18\obj\Debug\PracticeWork27_12_18.csproj.CoreCompileInputs.cache
+C:\Users\калабаева\source\repos\PracticeWork27_12_18\PracticeWork27_12_18\obj\Debug\PracticeWork27_12_18.exe
+C:\Users\калабаева\source\repos\PracticeWork27_12_18\PracticeWork27_12_18\obj\Debug\PracticeWork27_12_18.pdb
