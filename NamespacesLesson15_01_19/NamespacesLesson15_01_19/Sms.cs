@@ -1,30 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿// Install the C# / .NET helper library from twilio.com/docs/csharp/install
 
 using System;
 using Twilio;
 using Twilio.Rest.Api.V2010.Account;
 
 
-class Program
+namespace NamespacesLesson15_01_19
 {
-    static void Main(string[] args)
+    public static class SMS
     {
-        // Find your Account Sid and Token at twilio.com/console
-        const string accountSid = "ACaf5825a2de837d652356021ed33d5f68";
-        const string authToken = "your_auth_token";
+        public static void GetSms(string phone, string number)
+        {
+            // Find your Account Sid and Token at twilio.com/console
+            const string accountSid = "ACaf5825a2de837d652356021ed33d5f68";
+            const string authToken = "7a60437ac22d3a3858df8b8e63298ce4";
 
-        TwilioClient.Init(accountSid, authToken);
+            TwilioClient.Init(accountSid, authToken);
 
-        var message = MessageResource.Create(
-            body: "This is the ship that made the Kessel Run in fourteen parsecs?",
-            from: new Twilio.Types.PhoneNumber("+15017122661"),
-            to: new Twilio.Types.PhoneNumber("+15558675310")
-        );
-
-        Console.WriteLine(message.Sid);
+            var message = MessageResource.Create(
+                body: number,
+                from: new Twilio.Types.PhoneNumber("+17402992037"),
+                to: new Twilio.Types.PhoneNumber(phone)
+            );
+        }
     }
 }
