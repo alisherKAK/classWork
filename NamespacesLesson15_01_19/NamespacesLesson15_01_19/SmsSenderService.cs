@@ -1,13 +1,10 @@
-﻿// Install the C# / .NET helper library from twilio.com/docs/csharp/install
-
-using System;
+﻿using System;
 using Twilio;
 using Twilio.Rest.Api.V2010.Account;
 
-
 namespace NamespacesLesson15_01_19
 {
-    public static class SMS
+    public static class SmsSenderService
     {
         public static void GetSms(string phone, string number)
         {
