@@ -10,6 +10,9 @@ namespace AstraBus
     {
         static void Main(string[] args)
         {
+
+            int lastBusNumber = Constants.NULL;
+            bool isPaid = false;
             bool isFinish = false;
             bool isSited = false;
 
@@ -24,12 +27,16 @@ namespace AstraBus
                         TopUpBalance(card);
                         break;
                     case Constants.SECOND_CHOICE:
-                        SitOnBus(bus, isSited);
+                        SitOnBus(bus, ref isSited, ref lastBusNumber);
                         break;
                     case Constants.THIRD_CHOICE:
+                        if (isSited == true)
+                        {
+                            GetOffTheBus(ref isSited, ref isPaid);
+                        }
                         break;
                     case Constants.FOURTH_CHOICE:
-                        RideOnBus(bus, card, isSited);
+                        RideOnBus(bus, card, ref isSited, lastBusNumber, ref isPaid);
                         break;
                     case Constants.FIFTH_CHOICE:
                         BalanceShow(card);
@@ -41,114 +48,167 @@ namespace AstraBus
 
                 if(isFinish == true)
                 {
+                    Console.Clear();
                     break;
                 }
             }
         }
-        static void GetOffTheBus(bool isSited)
+        static void GetOffTheBus(ref bool isSited, ref bool isPaid)
         {
+            Console.Clear();
             Console.Write("Вы вышли с автобуса");
+            isSited = false;
+            isPaid = false;
             Console.ReadKey(true);
         }
-        static void RideOnBus(Bus bus, Card card, bool isSited)
+        static void RideOnBus(Bus bus, Card card, ref bool isSited, int lastBusNumber, ref bool isPaid)
         {
-            if(isSited == true)
+            Console.CursorVisible = true;
+            Console.Clear();
+
+            if (isSited == true)
             {
-                if(card.Preferential == false)
+                if (card.Preferential == false)
                 {
-                    Console.Write("Вы плтите детский или взрослый билет(c\a): ");
+                    Console.WriteLine("Вы плтите детский или взрослый билет(c/a): ");
 
-                    while (true)
+                    if (isPaid == false && lastBusNumber == bus.BusNumber)
                     {
-                        string choice = Console.ReadLine();
+                        while (true)
+                        {
+                            string choice = Console.ReadLine();
 
-                        if (choice == "c" || choice == "C" || choice == "Child" || choice == "CHILD")
-                        {
-                            if(card.Cash >= bus.ChildrenTicketPrice)
+                            if (choice == "c" || choice == "C" || choice == "Child" || choice == "CHILD")
                             {
-                                card.WithdrawMoney(bus.ChildrenTicketPrice);
-                                Console.Write("Все хорошо можете ездить");
-                                Console.ReadKey(true);
+                                if (card.Cash >= bus.ChildrenTicketPrice)
+                                {
+                                    card.WithdrawMoney(bus.ChildrenTicketPrice);
+                                    isPaid = true;
+                                    Console.Write("Все хорошо можете ездить");
+                                    Console.CursorVisible = false;
+                                    Console.ReadKey(true);
+                                    return;
+                                }
+                                else
+                                {
+                                    Console.Write("Вам не хвотает денег!");
+                                    Console.CursorVisible = false;
+                                    Console.ReadKey(true);
+                                    isPaid = false;
+                                    isSited = false;
+                                    return;
+                                }
                             }
-                            else
+                            else if (choice == "a" || choice == "A" || choice == "Adult" || choice == "ADULT")
                             {
-                                Console.Write("Вам не хвотает денег!");
-                                Console.ReadKey(true);
-                                isSited = false;
-                            }
-                        }
-                        else if(choice == "a" || choice == "A" || choice == "Adult" || choice == "ADULT")
-                        {
-                            if (card.Cash >= bus.AdultTicketPrice)
-                            {
-                                card.WithdrawMoney(bus.AdultTicketPrice);
-                                Console.Write("Все хорошо можете ездить");
-                                Console.ReadKey(true);
-                            }
-                            else
-                            {
-                                Console.Write("Вам не хвотает денег!");
-                                Console.ReadKey(true);
-                                isSited = false;
+                                if (card.Cash >= bus.AdultTicketPrice)
+                                {
+                                    card.WithdrawMoney(bus.AdultTicketPrice);
+                                    isPaid = true;
+                                    Console.Write("Все хорошо можете ездить");
+                                    Console.CursorVisible = false;
+                                    Console.ReadKey(true);
+                                    return;
+                                }
+                                else
+                                {
+                                    Console.Write("Вам не хватает денег!");
+                                    isPaid = false;
+                                    Console.CursorVisible = false;
+                                    Console.ReadKey(true);
+                                    isSited = false;
+                                    return;
+                                }
                             }
                         }
                     }
-                  
+                    else
+                    {
+                        Console.WriteLine("Вы уже заплатили за проезд!");
+                        Console.ReadKey(true);
+                    }
                 }
                 else
                 {
-                    Console.Write("Вы проехали какоето расстояние");
+                    Console.Write("Вы проехали какое-то расстояние");
+                    Console.CursorVisible = false;
+                    Console.ReadKey(true);
                 }
             }
             else
             {
                 Console.Write("Вы не сели в автобус");
+                Console.CursorVisible = false;
+                Console.ReadKey(true);
             }
         }
-        static void SitOnBus(Bus bus, bool isSited)
+        static void SitOnBus(Bus bus, ref bool isSited, ref int lastBusNumber)
         {
             Console.Clear();
-            while (true)
+            Console.CursorVisible = true;
+
+            if (isSited == false)
             {
-                try
+                while (true)
                 {
-                    Console.Write("На какой автобус вы хотите сесть( 1~99 внутри города, 100~199 экспресс внутр города, 300~399 пригородные ): ");
-
-                    int busNumber = Constants.NULL;
-
-                    if (int.TryParse(Console.ReadLine(), out busNumber))
+                    try
                     {
-                        bus.BusNumber = busNumber;
-                        isSited = true;
-                        return;
+                        Console.WriteLine("На какой автобус вы хотите сесть( 1~99 внутри города, 100~199 экспресс внутр города, 300~399 пригородные ): ");
+
+                        int busNumber = Constants.NULL;
+
+                        if (int.TryParse((Console.ReadLine()).Trim(), out busNumber))
+                        {
+                            bus.BusNumber = busNumber;
+                            lastBusNumber = busNumber;
+                            isSited = true;
+                            break;
+                        }
+
                     }
-
+                    catch (ArgumentException exception)
+                    {
+                        Console.WriteLine(exception.Message);
+                        isSited = false;
+                    }
                 }
-                catch (ArgumentException exception)
-                {
-                    Console.WriteLine(exception.Message);
-                }
-
+            }
+            else
+            {
+                Console.WriteLine("Значало нужно выйти из другого автобуса");
+                Console.ReadKey(true);
             }
         }
         static void TopUpBalance(Card card)
         {
             Console.Clear();
+            Console.CursorVisible = true;
             while (true)
             {
-                Console.Write("Вы относитесь к льготной группе(y/n): ");
-
-                string choice = Console.ReadLine();
-
-                if(choice == "y" || choice == "Y" || choice == "Yes" || choice == "yes" || choice == "YES")
+                try
                 {
-                    card.Preferential = true;
-                    break;
+                    Console.WriteLine("Вы относитесь к льготной группе(y/n): ");
+
+                    string choice = Console.ReadLine();
+
+                    if (choice == "y" || choice == "Y" || choice == "Yes" || choice == "yes" || choice == "YES")
+                    {
+                        card.Preferential = true;
+                        break;
+                    }
+                    else if (choice == "n" || choice == "N" || choice == "No" || choice == "no" || choice == "NO")
+                    {
+                        card.Preferential = false;
+                        break;
+                    }
+                    else
+                    {
+                        throw new ArgumentException("Вы ввели неправильно!");
+                    }
                 }
-                else if (choice == "n" || choice == "N" || choice == "No" || choice == "no" || choice == "NO")
+                catch (ArgumentException exception)
                 {
-                    card.Preferential = false;
-                    break;
+                    Console.WriteLine(exception.Message);
                 }
             }
 
@@ -159,20 +219,28 @@ namespace AstraBus
             }
             else
             {
-                Console.Write("На какую сумму вы хотите поплнить карту: ");
 
                 while (true)
                 {
+                    Console.WriteLine("На какую сумму вы хотите поплнить карту: ");
+
                     double sum = Constants.NULL;
 
-                    if(double.TryParse(Console.ReadLine(), out sum))
+                    try
                     {
-                        card.PutMoney(sum);
-                        break;
+                        if (double.TryParse(Console.ReadLine(), out sum))
+                        {
+                            card.PutMoney(sum);
+                            break;
+                        }
+                        else
+                        {
+                            throw new ArgumentException("Вы ввели неправильную сумму");
+                        }
                     }
-                    else
+                    catch(ArgumentException exception)
                     {
-
+                        Console.WriteLine(exception.Message);
                     }
                 }
             }
@@ -198,6 +266,7 @@ namespace AstraBus
         }
         static int Choice()
         {
+            Console.CursorVisible = false;
             Console.Clear();
             Console.Write("__________________________\n" +
                           "|                        |\n" +
