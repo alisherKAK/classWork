@@ -1,0 +1,6 @@
+c:\users\калабаева\source\repos\PracticeWork10_03_19\PracticeWork10_03_19\bin\Debug\PracticeWork10_03_19.exe
+c:\users\калабаева\source\repos\PracticeWork10_03_19\PracticeWork10_03_19\bin\Debug\PracticeWork10_03_19.pdb
+c:\users\калабаева\source\repos\PracticeWork10_03_19\PracticeWork10_03_19\obj\Debug\PracticeWork10_03_19.csprojAssemblyReference.cache
+c:\users\калабаева\source\repos\PracticeWork10_03_19\PracticeWork10_03_19\obj\Debug\PracticeWork10_03_19.csproj.CoreCompileInputs.cache
+c:\users\калабаева\source\repos\PracticeWork10_03_19\PracticeWork10_03_19\obj\Debug\PracticeWork10_03_19.exe
+c:\users\калабаева\source\repos\PracticeWork10_03_19\PracticeWork10_03_19\obj\Debug\PracticeWork10_03_19.pdb
