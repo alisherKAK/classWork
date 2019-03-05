@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLPasring", "XMLPasring\XMLPasring.csproj", "{7B4ECC75-2F54-42A7-B524-DCD2C9018CDA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B4ECC75-2F54-42A7-B524-DCD2C9018CDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B4ECC75-2F54-42A7-B524-DCD2C9018CDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B4ECC75-2F54-42A7-B524-DCD2C9018CDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B4ECC75-2F54-42A7-B524-DCD2C9018CDA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F37CA57C-0C17-429A-B8C7-6EEB3E320CBD}
+	EndGlobalSection
+EndGlobal

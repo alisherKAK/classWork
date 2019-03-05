@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<city>
+  <name>Астана</name>
+  <population>1200000</population>
+  <isCapital>true</isCapital>
+  <countryName>Казахстан</countryName>
+</city>

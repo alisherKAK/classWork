@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<poeple>
+  <person>
+    <id>1</id>
+    <fullname>П.П.Керсанов</fullname>
+    <age>5</age>
+    <city>Астана</city>
+  </person>
+
+  <person id="1" fullname="П.П.Керсанов" age="5" city="Астана"/>
+</poeple>

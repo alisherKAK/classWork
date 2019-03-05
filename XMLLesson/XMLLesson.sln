@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLLesson", "XMLLesson\XMLLesson.csproj", "{BB8E3A08-C943-4D65-B6CB-A4BCAEE73568}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB8E3A08-C943-4D65-B6CB-A4BCAEE73568}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB8E3A08-C943-4D65-B6CB-A4BCAEE73568}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB8E3A08-C943-4D65-B6CB-A4BCAEE73568}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB8E3A08-C943-4D65-B6CB-A4BCAEE73568}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BFE7ADBB-A31B-49E8-8059-661578FFD600}
+	EndGlobalSection
+EndGlobal
