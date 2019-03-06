@@ -1,0 +1,7 @@
+C:\Users\калабаева.CORP\source\repos\Generic\Generic\obj\Debug\Generic.csprojAssemblyReference.cache
+C:\Users\калабаева.CORP\source\repos\Generic\Generic\obj\Debug\Generic.csproj.CoreCompileInputs.cache
+C:\Users\калабаева.CORP\source\repos\Generic\Generic\bin\Debug\Generic.exe.config
+C:\Users\калабаева.CORP\source\repos\Generic\Generic\bin\Debug\Generic.exe
+C:\Users\калабаева.CORP\source\repos\Generic\Generic\bin\Debug\Generic.pdb
+C:\Users\калабаева.CORP\source\repos\Generic\Generic\obj\Debug\Generic.exe
+C:\Users\калабаева.CORP\source\repos\Generic\Generic\obj\Debug\Generic.pdb
