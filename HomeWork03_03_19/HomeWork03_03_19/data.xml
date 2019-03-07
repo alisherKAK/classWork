@@ -1,0 +1,1315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>Хабр</title>
+    <link>https://habr.com/ru/all//</link>
+    <description>
+      <![CDATA[
+
+]]>
+    </description>
+    <language>ru</language>
+    <managingEditor>editor@habr.com</managingEditor>
+    <generator>habr.com</generator>
+    <pubDate>Mon, 04 Mar 2019 12:47:46 GMT</pubDate>
+    <lastBuildDate/>
+    <image>
+      <link>https://habr.com/ru/</link>
+      <url>https://habr.com/images/logo.png</url>
+      <title>Хабр</title>
+    </image>
+    <item>
+      <title>
+        <![CDATA[
+Отдельные профили для фрилансеров и заказчиков
+]]>
+      </title>
+      <guid isPermaLink="true">https://habr.com/ru/post/433930/</guid>
+      <link>https://habr.com/ru/post/433930/?utm_source=habrahabr&utm_medium=rss&utm_campaign=433930</link>
+      <description>
+        <![CDATA[
+Мы разделили профили исполнителей и заказчиков на <a href="https://freelansim.ru/">Фрилансим</a> для того, чтобы с сайтом было проще работать. Перед нами стояла задача — сделать процесс поиска заказов или фрилансеров интуитивно понятнее, убрать ненужные или редко используемые ссылки, но оставить при этом переключение с роли на роль максимально простым для тех, кто и размещает заказы и откликается на них. Думаем, у нас получилось.<br>
+<br>
+<img src="https://habrastorage.org/webt/pm/md/py/pmmdpy-jkvfss1rumgk02zxwene.png" alt="image"><br> <a href="https://habr.com/ru/post/433930/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=433930#habracut">Читать дальше →</a>
+]]>
+      </description>
+      <pubDate>Mon, 04 Mar 2019 12:12:23 GMT</pubDate>
+      <dc:creator>freelansim</dc:creator>
+      <category>
+        <![CDATA[
+Блог компании Фрилансим
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Фриланс
+]]>
+      </category>
+      <category>
+        <![CDATA[
+фриланс
+]]>
+      </category>
+      <category>
+        <![CDATA[
+фрилансим
+]]>
+      </category>
+    </item>
+    <item>
+      <title>
+        <![CDATA[
+Как Tinkoff.ru автоматизирует аналитику с Zeppelin
+]]>
+      </title>
+      <guid isPermaLink="true">https://habr.com/ru/post/440146/</guid>
+      <link>https://habr.com/ru/post/440146/?utm_source=habrahabr&utm_medium=rss&utm_campaign=440146</link>
+      <description>
+        <![CDATA[
+Tinkoff.ru разрабатывает множество сервисов на рынке финансовых услуг. У нас решают свои повседневные задачи аналитики, разработчики, технологи, менеджеры. Все мы ежедневно генерим идеи, анализируем, разрабатываем и делаем все, чтобы создавать лучший продукт на рынке.<br>
+<br>
+Я работаю бекенд-программистом в отделе внутренней разработки. Мы помогаем запускать новые бизнес линии, автоматизируем рабочий процесс и пытаемся сэкономить банку денег там, где это возможно (например отказаться от покупки лицензии на какой нибудь дорогой софт). Рабочий процесс у нас весьма стандартный, менеджеры придумывают бизнес-фичи, технологи их формализуют и ставят задачи, аналитики анализируют данные, а разработчики уже решают поставленные перед ними задачи. В жизни все конечно же немного сложнее, но вы и так это знаете. <a href="https://habr.com/ru/post/440146/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=440146#habracut">Читать дальше →</a>
+]]>
+      </description>
+      <pubDate>Wed, 13 Feb 2019 09:25:35 GMT</pubDate>
+      <dc:creator>alexyakovlev90</dc:creator>
+      <category>
+        <![CDATA[
+Блог компании Tinkoff.ru
+]]>
+      </category>
+      <category>
+        <![CDATA[
+API
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Java
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Python
+]]>
+      </category>
+      <category>
+        <![CDATA[
+apache zeppelin
+]]>
+      </category>
+      <category>
+        <![CDATA[
+java
+]]>
+      </category>
+      <category>
+        <![CDATA[
+backend
+]]>
+      </category>
+      <category>
+        <![CDATA[
+tinkoff
+]]>
+      </category>
+      <category>
+        <![CDATA[
+analytics
+]]>
+      </category>
+      <category>
+        <![CDATA[
+cashback
+]]>
+      </category>
+      <category>
+        <![CDATA[
+блог компании tinkoff
+]]>
+      </category>
+    </item>
+    <item>
+      <title>
+        <![CDATA[
+Формула для корейского, или распознаем хангыль быстро, легко и без ошибок
+]]>
+      </title>
+      <guid isPermaLink="true">https://habr.com/ru/post/441938/</guid>
+      <link>https://habr.com/ru/post/441938/?utm_source=habrahabr&utm_medium=rss&utm_campaign=441938</link>
+      <description>
+        <![CDATA[
+<img src="https://habrastorage.org/webt/ba/mt/v2/bamtv2b4kyxq8bt4-5hynwx0are.jpeg" align="right">На сегодняшний день сделать распознавание корейских символов может любой студент, прослушавший курс по нейросетям. Дайте ему выборку и компьютер с видеокартой, и через некоторое время он принесёт вам сеть, которая будет распознавать корейские символы почти без ошибок.<br>
+<br>
+Но такое решение будет обладать рядом недостатков: <br>
+<br>
+<b>Во-первых</b>, большое количество необходимых вычислений, что влияет на время работы или требуемую энергию (что очень актуально для мобильных устройств). Действительно, если мы хотим распознавать хотя бы 3000 символов, то это будет размер последнего слоя сети. А если вход этого слоя равен хотя бы 512-ти, то получаем 512 * 3000 умножений. Многовато.<br>
+<br>
+<b>Во-вторых</b>, размер. Тот же самый последний слой из предыдущего примера будет весить 512 * 3001 * 4 байт, то есть около 6-ти мегабайт. Это только один слой, вся сеть будет весить десятки мегабайт. Понятно, для настольного компьютера это проблема небольшая, но на смартфоне не все будут готовы хранить столько данных для распознавания одного языка.<br>
+<br>
+<b>В-третьих</b>, такая сеть будет давать непредсказуемый результат на изображениях, которые не являются корейскими символами, но тем не менее используются в корейских текстах. В лабораторных условиях это не трудно, но для практического применения технологии этот вопрос придётся как-то решать.<br>
+<br>
+<b>И в-четвёртых</b>, проблема в количестве символов: 3000, скорее всего, хватит чтобы, например, отличить в меню ресторана стейк от жареного морского огурца, но порой встречаются и более сложные тексты. Обучить сеть на большее количество символов будет сложно: она будет не только более медленной, но и возникнет проблема со сбором обучающей выборки, так как частота символов падает приблизительно экспоненциально. Конечно, можно доставать изображения из шрифтов и аугментировать их, но для обучения хорошей сети этого недостаточно.<br>
+<br>
+И сегодня я расскажу, как нам удалось решить эти проблемы.<br> <a href="https://habr.com/ru/post/441938/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=441938#habracut">Читать дальше →</a>
+]]>
+      </description>
+      <pubDate>Mon, 04 Mar 2019 12:11:21 GMT</pubDate>
+      <dc:creator>YuryVatlin</dc:creator>
+      <category>
+        <![CDATA[
+Блог компании ABBYY
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Высокая производительность
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Искусственный интеллект
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Машинное обучение
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Обработка изображений
+]]>
+      </category>
+      <category>
+        <![CDATA[
+abbyy
+]]>
+      </category>
+      <category>
+        <![CDATA[
+хангыль
+]]>
+      </category>
+      <category>
+        <![CDATA[
+корейский язык
+]]>
+      </category>
+      <category>
+        <![CDATA[
+алфавит
+]]>
+      </category>
+      <category>
+        <![CDATA[
+нейросети
+]]>
+      </category>
+      <category>
+        <![CDATA[
+machine learning
+]]>
+      </category>
+      <category>
+        <![CDATA[
+сверточные нейронные сети
+]]>
+      </category>
+      <category>
+        <![CDATA[
+искусственный интеллект
+]]>
+      </category>
+    </item>
+    <item>
+      <title>
+        <![CDATA[
+Интуитивный RL (Reinforcement Learning): введение в Advantage-Actor-Critic (A2C)
+]]>
+      </title>
+      <guid isPermaLink="true">https://habr.com/ru/post/442522/</guid>
+      <link>https://habr.com/ru/post/442522/?utm_source=habrahabr&utm_medium=rss&utm_campaign=442522</link>
+      <description>
+        <![CDATA[
+<p>Это вольный перевод статьи Rudy Gilman и Katherine Wang <a href="https://hackernoon.com/intuitive-rl-intro-to-advantage-actor-critic-a2c-4ff545978752">Intuitive RL: Intro to Advantage-Actor-Critic (A2C)</a>.</p><img vspace="10" src="https://habrastorage.org/webt/_g/tr/gc/_gtrgckvsc0pemxqwe4iv6sxzsu.png"><p>Специалисты по усиленному обучению (RL) подготовили множество отличных учебных пособий. Большинство, однако, описывают RL в терминах математических уравнений и абстрактных диаграмм. Нам нравится думать о предмете с другой точки зрения. Сама RL вдохновлена ​​тем, как учатся животные, так почему бы не перевести лежащий в основе этого механизм RL обратно в природные явления, которые он призван имитировать? Люди учатся лучше всего через истории.</p><br>
+<p>Это история о модели Actor Advantage Critic (A2C). Модель «Действующее лицо-критик» — это популярная форма модели Policy Gradient, которая сама по себе является традиционным алгоритмом RL. Если вы понимаете A2C, вы понимаете глубокий RL.</p><br> <a href="https://habr.com/ru/post/442522/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=442522#habracut">Читать дальше →</a>
+]]>
+      </description>
+      <pubDate>Mon, 04 Mar 2019 09:58:55 GMT</pubDate>
+      <dc:creator>SunZi</dc:creator>
+      <category>
+        <![CDATA[
+Искусственный интеллект
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Машинное обучение
+]]>
+      </category>
+      <category>
+        <![CDATA[
+переводы
+]]>
+      </category>
+      <category>
+        <![CDATA[
+машинное обучение
+]]>
+      </category>
+      <category>
+        <![CDATA[
+data science
+]]>
+      </category>
+      <category>
+        <![CDATA[
+machine learning
+]]>
+      </category>
+      <category>
+        <![CDATA[
+deep learning
+]]>
+      </category>
+      <category>
+        <![CDATA[
+reinforcement learning
+]]>
+      </category>
+    </item>
+    <item>
+      <title>
+        <![CDATA[
+Wireshark 3.0.0: обзор нововведений
+]]>
+      </title>
+      <guid isPermaLink="true">https://habr.com/ru/post/442530/</guid>
+      <link>https://habr.com/ru/post/442530/?utm_source=habrahabr&utm_medium=rss&utm_campaign=442530</link>
+      <description>
+        <![CDATA[
+<img src="https://habrastorage.org/getpro/habr/post_images/0fb/c62/0b1/0fbc620b1aaf9139cb14eea66a51ff9f.png" alt="image"><br>
+<br>
+Wireshark Foundation выпустила финальную stable-версию популярного сетевого анализатора трафика — Wireshark 3.0.0. В новом релизе устранено несколько багов, реализована возможность анализа новых протоколов и заменен драйвер WinPcap на Npcap.<br>
+<br>
+Wireshark — самый популярный в мире анализатор сетевых протоколов. Он используется для устранения неполадок, анализа, развития и обучения.<br> <a href="https://habr.com/ru/post/442530/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=442530#habracut">Читать дальше →</a>
+]]>
+      </description>
+      <pubDate>Mon, 04 Mar 2019 10:59:59 GMT</pubDate>
+      <dc:creator>LukaSafonov</dc:creator>
+      <category>
+        <![CDATA[
+Блог компании Инфосистемы Джет
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Информационная безопасность
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Сетевые технологии
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Wireshark
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Npcap
+]]>
+      </category>
+    </item>
+    <item>
+      <title>
+        <![CDATA[
+Тестирование на iOS 9 и выше: не баги приложений, а фичи платформы
+]]>
+      </title>
+      <guid isPermaLink="true">https://habr.com/ru/post/441822/</guid>
+      <link>https://habr.com/ru/post/441822/?utm_source=habrahabr&utm_medium=rss&utm_campaign=441822</link>
+      <description>
+        <![CDATA[
+<img src="https://habrastorage.org/webt/an/1c/5z/an1c5zrgowqsya5p3luqvhexc_c.jpeg"><br>
+<p><br>
+<img src="https://habrastorage.org/webt/3u/co/o7/3ucoo7wdrdjk5u1apjusvyc75s8.jpeg" align="left"><strong>Оксана Фадеева, инженер по обеспечению качества Redmadrobot</strong><br>
+У платформы iOS 9 и выше есть особенности, которые нужно учитывать при тестировании мобильных приложений. Некоторые из них могут ввести в заблуждение и восприниматься как дефект приложения, хотя на самом деле это специфика работы платформы.</p><br>
+<p>В этой статье я опишу системные особенности iOS 9 и выше, на которые мы не можем повлиять, а также расскажу, на что еще надо обращать внимание при тестировании мобильных приложений на этой платформе. Надеюсь, это поможет вам сократить время тестирования своих приложений.</p> <a href="https://habr.com/ru/post/441822/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=441822#habracut">Читать дальше →</a>
+]]>
+      </description>
+      <pubDate>Mon, 04 Mar 2019 07:34:11 GMT</pubDate>
+      <dc:creator>redmadrobot</dc:creator>
+      <category>
+        <![CDATA[
+Блог компании Redmadrobot
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Разработка под iOS
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Тестирование мобильных приложений
+]]>
+      </category>
+      <category>
+        <![CDATA[
+тестирование мобильных приложений
+]]>
+      </category>
+      <category>
+        <![CDATA[
+quality assurance
+]]>
+      </category>
+      <category>
+        <![CDATA[
+ios development
+]]>
+      </category>
+      <category>
+        <![CDATA[
+ios-разработка
+]]>
+      </category>
+      <category>
+        <![CDATA[
+ios 9
+]]>
+      </category>
+    </item>
+    <item>
+      <title>
+        <![CDATA[
+Gatsby.js в деталях
+]]>
+      </title>
+      <guid isPermaLink="true">https://habr.com/ru/post/442298/</guid>
+      <link>https://habr.com/ru/post/442298/?utm_source=habrahabr&utm_medium=rss&utm_campaign=442298</link>
+      <description>
+        <![CDATA[
+<p>Как известно на одних бойлерплейтах далеко не уедешь, поэтому приходится лезть вглубь любой технологии, чтобы научиться писать что-то стоящее. В этой статье рассмотрены детали <strong>Gatsby.js</strong>, знание которых позволит вам создавать и поддерживать сложные вебсайты и блоги.</p> <a href="https://habr.com/ru/post/442298/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=442298#habracut">Читать дальше →</a>
+]]>
+      </description>
+      <pubDate>Mon, 04 Mar 2019 05:46:57 GMT</pubDate>
+      <dc:creator>alexandrtovmach</dc:creator>
+      <category>
+        <![CDATA[
+JavaScript
+]]>
+      </category>
+      <category>
+        <![CDATA[
+ReactJS
+]]>
+      </category>
+      <category>
+        <![CDATA[
+gatsbyjs
+]]>
+      </category>
+      <category>
+        <![CDATA[
+reactjs
+]]>
+      </category>
+      <category>
+        <![CDATA[
+optimization
+]]>
+      </category>
+      <category>
+        <![CDATA[
+web-разработка
+]]>
+      </category>
+      <category>
+        <![CDATA[
+alexandrtovmach
+]]>
+      </category>
+    </item>
+    <item>
+      <title>
+        <![CDATA[
+Расширяемый Postgres
+]]>
+      </title>
+      <guid isPermaLink="true">https://habr.com/ru/post/442058/</guid>
+      <link>https://habr.com/ru/post/442058/?utm_source=habrahabr&utm_medium=rss&utm_campaign=442058</link>
+      <description>
+        <![CDATA[
+<p><img src="https://habrastorage.org/webt/bk/do/2p/bkdo2pbopqlx4pgqynp-2uyqwk0.jpeg"></p><br>
+<p>На прошедшем PGConf.Russia был доклад про расширение <a href="https://pgconf.ru/2019/242944">MobilityDB</a>, а Андрей Бородин предложил <a href="https://pgconf.ru/2019/242725">идею</a> расширять методы индексов под задачу.</p><br>
+<p>Продолжу тему с расширением Postgres под решаемую задачу на примере расширения сделанного в рамках HighLoad Cup 2018, код доступен на <a href="https://github.com/RPG-18/highloadcup2018">GithHub</a>. На хабре уже есть <a href="https://habr.com/ru/post/198332/">статья</a> от <a href="https://habr.com/ru/users/blackmaster/" class="user_link">blackmaster</a>. Расширение добавляет два типа с поддержкой btree и GIN индексов.</p> <a href="https://habr.com/ru/post/442058/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=442058#habracut">Читать дальше →</a>
+]]>
+      </description>
+      <pubDate>Mon, 04 Mar 2019 09:05:37 GMT</pubDate>
+      <dc:creator>RPG18</dc:creator>
+      <category>
+        <![CDATA[
+C++
+]]>
+      </category>
+      <category>
+        <![CDATA[
+PostgreSQL
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Программирование
+]]>
+      </category>
+      <category>
+        <![CDATA[
+postgres
+]]>
+      </category>
+      <category>
+        <![CDATA[
+c++
+]]>
+      </category>
+    </item>
+    <item>
+      <title>
+        <![CDATA[
+Знакомство с Neural ODE
+]]>
+      </title>
+      <guid isPermaLink="true">https://habr.com/ru/post/442002/</guid>
+      <link>https://habr.com/ru/post/442002/?utm_source=habrahabr&utm_medium=rss&utm_campaign=442002</link>
+      <description>
+        <![CDATA[
+<h1>Neural Ordinary Differential Equations</h1><br>
+Значительная доля процессов описывается дифференциальными уравнениями, это могут быть эволюция физической системы во времени, медицинское состояние пациента, фундаментальные характеристики фондового рынка и т.д. Данные о таких процессах последовательны и непрерывны по своей природе, в том смысле, что наблюдения — это просто проявления какого-то непрерывно изменяющегося состояния.<br>
+<br>
+Есть также и другой тип последовательных данных, это дискретные данные, например, данные NLP задач. Состояния в таких данных меняется дискретно: от одного символа или слова к другому.<br>
+<br>
+Сейчас оба типа таких последовательных данных обычно обрабатываются рекуррентными сетями, несмотря на то, что они отличны по своей природе, и похоже, требуют различных подходов.<br>
+<br>
+На последней <em>NIPS-конференции</em> была представлена одна очень интересная статья, которая может помочь решить эту проблему. Авторы предлагают подход, который они назвали <strong>Нейронные Обыкновенные Дифференциальные Уравнения (Neural ODE)</strong>.<br>
+<br>
+Здесь я постарался воспроизвести и кратко изложить результаты этой статьи, чтобы сделать знакомство с ее идеей чуть более простым. Мне кажется, что эта новая архитектура вполне может найти место в стандартном инструментарии дата-сайентиста наряду со сверточными и рекуррентными сетями.<br>
+<br>
+<div style="text-align:center;"><img src="https://habrastorage.org/webt/7e/65/hf/7e65hfxs1amdqyy_uy6emdwulkg.png"></div><br> <a href="https://habr.com/ru/post/442002/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=442002#habracut">Читать дальше →</a>
+]]>
+      </description>
+      <pubDate>Mon, 04 Mar 2019 11:02:55 GMT</pubDate>
+      <dc:creator>iphysic</dc:creator>
+      <category>
+        <![CDATA[
+Блог компании Open Data Science
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Python
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Алгоритмы
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Математика
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Машинное обучение
+]]>
+      </category>
+      <category>
+        <![CDATA[
+python
+]]>
+      </category>
+      <category>
+        <![CDATA[
+pytorch
+]]>
+      </category>
+      <category>
+        <![CDATA[
+deep learning
+]]>
+      </category>
+      <category>
+        <![CDATA[
+neural networkds
+]]>
+      </category>
+      <category>
+        <![CDATA[
+recurrent neural network
+]]>
+      </category>
+      <category>
+        <![CDATA[
+resnet
+]]>
+      </category>
+      <category>
+        <![CDATA[
+neural ode
+]]>
+      </category>
+    </item>
+    <item>
+      <title>
+        <![CDATA[
+Топ-10 докладов конференции C++ Russia 2018: полные видеозаписи, слайды, комментарии
+]]>
+      </title>
+      <guid isPermaLink="true">https://habr.com/ru/post/442498/</guid>
+      <link>https://habr.com/ru/post/442498/?utm_source=habrahabr&utm_medium=rss&utm_campaign=442498</link>
+      <description>
+        <![CDATA[
+<p>В этой статье вас ждёт десять лучших докладов от Андрея Александреску, Дэвида Вандервурда, Джона Калба и многих других. </p><br>
+<p>Фичи компилятора C++, асинхронность, многопоточность, параллелизм, модель памяти, алгоритмы и STL, метапрограммирование и рефлекшен, огромное множество тем. </p><br>
+<p><img src="https://habrastorage.org/webt/dd/1j/qg/dd1jqg0p95lbo0z3vxcd8tldp68.png"></p><br>
+<p>Всё это — записи с конференции C++ Russia, самой большой в истории. Восемь сотен участников, немаленький зал, спикеры с мировым именем. Прошёл год, но большинство докладов ничуть не утратило своей актуальности. Впрочем, и неудивительно — именно такие доклады и попадают в топ по оценке участников.</p><br>
+<p>Формат таков:</p><br>
+<ul>
+<li>Обязательное видео на YouTube</li>
+<li>Слайды, если есть</li>
+<li>Подробное описание доклада на русском языке</li>
+<li>Краткая биография докладчика</li>
+</ul><br>
+<p>Плюс у вас есть комментарии Хабра, чтобы обсудить увиденное. Реклама на ютубе отключена, никто не будет мешать. Есть всё, чтобы начать смотреть прямо сейчас.</p> <a href="https://habr.com/ru/post/442498/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=442498#habracut">Читать дальше →</a>
+]]>
+      </description>
+      <pubDate>Mon, 04 Mar 2019 09:18:37 GMT</pubDate>
+      <dc:creator>olegchir</dc:creator>
+      <category>
+        <![CDATA[
+Блог компании JUG.ru Group
+]]>
+      </category>
+      <category>
+        <![CDATA[
+C++
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Высокая производительность
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Компиляторы
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Конференции
+]]>
+      </category>
+      <category>
+        <![CDATA[
+C++
+]]>
+      </category>
+      <category>
+        <![CDATA[
+C++ Russia
+]]>
+      </category>
+      <category>
+        <![CDATA[
+C++ Russia 2018
+]]>
+      </category>
+      <category>
+        <![CDATA[
+TOP-10
+]]>
+      </category>
+    </item>
+    <item>
+      <title>
+        <![CDATA[
+Упорядочить хаос
+]]>
+      </title>
+      <guid isPermaLink="true">https://habr.com/ru/post/442380/</guid>
+      <link>https://habr.com/ru/post/442380/?utm_source=habrahabr&utm_medium=rss&utm_campaign=442380</link>
+      <description>
+        <![CDATA[
+<p>Как показывает практика, огромная часть проблем возникает не из-за решений самих по себе, а из-за того каким образом происходит общение между компонентами системы. Если в коммуникации между компонентами системы бардак, то, как не старайся хорошо писать отдельные компоненты, система в целом будет сбоить. </p><br>
+<p>Осторожно! Внутри велосипед.</p> <a href="https://habr.com/ru/post/442380/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=442380#habracut">Читать дальше →</a>
+]]>
+      </description>
+      <pubDate>Mon, 04 Mar 2019 02:03:29 GMT</pubDate>
+      <dc:creator>AlexWriter</dc:creator>
+      <category>
+        <![CDATA[
+JavaScript
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Node.JS
+]]>
+      </category>
+      <category>
+        <![CDATA[
+TypeScript
+]]>
+      </category>
+      <category>
+        <![CDATA[
+typescript
+]]>
+      </category>
+      <category>
+        <![CDATA[
+protobuf
+]]>
+      </category>
+      <category>
+        <![CDATA[
+protocol
+]]>
+      </category>
+      <category>
+        <![CDATA[
+network
+]]>
+      </category>
+      <category>
+        <![CDATA[
+communication
+]]>
+      </category>
+    </item>
+    <item>
+      <title>
+        <![CDATA[
+История советских кассетников (часть вторая): бум Walkman`ов, гаджет для КГБ и магнитофоны-конструкторы
+]]>
+      </title>
+      <guid isPermaLink="true">https://habr.com/ru/post/442526/</guid>
+      <link>https://habr.com/ru/post/442526/?utm_source=habrahabr&utm_medium=rss&utm_campaign=442526</link>
+      <description>
+        <![CDATA[
+Продолжаем рассказывать о советских портативных кассетных магнитофонах. С первой частью материала можно <a href="https://habr.com/ru/company/pult/blog/442358/">ознакомиться здесь</a>. Пришло время устройств с компактным форм-фактором, которые традиционно считаются наследниками легендарного SONY Walkman. Удивительно, но за сравнительно короткий период советская промышленность разработала внушительное количество устройств такого рода, многие из которых стали настоящими хитами среди советской молодежи 80-х.<br>
+<br>
+<img src="https://habrastorage.org/webt/pc/vy/3j/pcvy3je0vyu-yrl-eez0rdfgxwu.jpeg"><br>
+<br>
+Для меня этот пост еще и повод поностальгировать. Моим первым аудиогаджетом в жизни был портативный магнитофон “Электроника-331-стерео”, который появился в семье не на много позже меня, впоследствии это же устройство я использовал вместе со своим первым компьютером ZX-Spectrum. Именно благодаря ему я стал интересоваться музыкой, а впервые сломав и пытаясь починить узнал, что в советские магнитофоны ставят японские двигатели.<br> <a href="https://habr.com/ru/post/442526/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=442526#habracut">Читать дальше →</a>
+]]>
+      </description>
+      <pubDate>Mon, 04 Mar 2019 10:13:13 GMT</pubDate>
+      <dc:creator>Sound_cULT</dc:creator>
+      <category>
+        <![CDATA[
+Блог компании Pult.ru
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Гаджеты
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Звук
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Производство и разработка электроники
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Старое железо
+]]>
+      </category>
+      <category>
+        <![CDATA[
+магнитофоны
+]]>
+      </category>
+      <category>
+        <![CDATA[
+звук
+]]>
+      </category>
+      <category>
+        <![CDATA[
+аудио
+]]>
+      </category>
+      <category>
+        <![CDATA[
+винтаж
+]]>
+      </category>
+      <category>
+        <![CDATA[
+кассеты
+]]>
+      </category>
+      <category>
+        <![CDATA[
+кассетные магнитофоны
+]]>
+      </category>
+      <category>
+        <![CDATA[
+cccр
+]]>
+      </category>
+      <category>
+        <![CDATA[
+магнитная запись
+]]>
+      </category>
+      <category>
+        <![CDATA[
+история
+]]>
+      </category>
+      <category>
+        <![CDATA[
+старое железо
+]]>
+      </category>
+      <category>
+        <![CDATA[
+история создания электроники
+]]>
+      </category>
+      <category>
+        <![CDATA[
+плееры
+]]>
+      </category>
+      <category>
+        <![CDATA[
+walkman
+]]>
+      </category>
+    </item>
+    <item>
+      <title>
+        <![CDATA[
+Финтех-дайджест: бесплатные переводы в системе СБП, уязвимость банков к атакам и другие новости
+]]>
+      </title>
+      <guid isPermaLink="true">https://habr.com/ru/post/442406/</guid>
+      <link>https://habr.com/ru/post/442406/?utm_source=habrahabr&utm_medium=rss&utm_campaign=442406</link>
+      <description>
+        <![CDATA[
+<a href="https://habr.com/ru/company/alfa/blog/442406/"><img src="https://habrastorage.org/webt/w1/zt/fq/w1ztfqz45zsjgea1fmllt0hc-48.jpeg"></a><br>
+ <br>
+Сегодня в дайджесте:<br>
+<br>
+<ul>
+<li>Бесплатные переводы средств между банками, которые входят в систему СБП;</li>
+<li>Степень уязвимости банков к атакам злоумышленников;</li>
+<li>Финансовая грамотность населения растет;</li>
+<li>Криптовалюты остаются непопулярным средством платежа.</li>
+</ul><br>
+ <br>
+<h3>Переводы без комиссии</h3><br>
+Почти все банки, подключенные к Системе быстрых платежей, запущенной Центробанком, приняли решение не брать с клиентов комиссию за переводы. Бесплатные переводы будут актуальными, по крайней мере, в первые месяцы работы системы.<br> <a href="https://habr.com/ru/post/442406/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=442406#habracut">Читать дальше →</a>
+]]>
+      </description>
+      <pubDate>Mon, 04 Mar 2019 08:10:01 GMT</pubDate>
+      <dc:creator>D_Halli</dc:creator>
+      <category>
+        <![CDATA[
+Блог компании «Альфа-Банк»
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Законодательство в IT
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Криптовалюты
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Финансы в IT
+]]>
+      </category>
+      <category>
+        <![CDATA[
+финтех
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Альфа-Банк
+]]>
+      </category>
+      <category>
+        <![CDATA[
+ЦБ
+]]>
+      </category>
+      <category>
+        <![CDATA[
+СБП
+]]>
+      </category>
+      <category>
+        <![CDATA[
+система безопасных платежей
+]]>
+      </category>
+      <category>
+        <![CDATA[
+криптовалюты
+]]>
+      </category>
+      <category>
+        <![CDATA[
+банки
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Лаборатория Касперского
+]]>
+      </category>
+      <category>
+        <![CDATA[
+финансовая грамотность
+]]>
+      </category>
+      <category>
+        <![CDATA[
+информационная безопасность
+]]>
+      </category>
+    </item>
+    <item>
+      <title>
+        <![CDATA[
+[Перевод] Руководство по использованию pandas для анализа больших наборов данных
+]]>
+      </title>
+      <guid isPermaLink="true">https://habr.com/ru/post/442516/</guid>
+      <link>https://habr.com/ru/post/442516/?utm_source=habrahabr&utm_medium=rss&utm_campaign=442516</link>
+      <description>
+        <![CDATA[
+При использовании библиотеки pandas для анализа маленьких наборов данных, размер которых не превышает 100 мегабайт, производительность редко становится проблемой. Но когда речь идёт об исследовании наборов данных, размеры которых могут достигать нескольких гигабайт, проблемы с производительностью могут приводить к значительному увеличению длительности анализа данных и даже могут становиться причиной невозможности проведения анализа из-за нехватки памяти.<br>
+<br>
+В то время как инструменты наподобие Spark могут эффективно обрабатывать большие наборы данных (от сотен гигабайт до нескольких терабайт), для того чтобы полноценно пользоваться их возможностями обычно нужно достаточно мощное и дорогое аппаратное обеспечение. И, в сравнении с pandas, они не отличаются богатыми наборами средств для качественного проведения очистки, исследования и анализа данных. Для наборов данных средних размеров лучше всего попытаться более эффективно использовать pandas, а не переходить на другие инструменты.<br>
+<br>
+<a href="https://habr.com/ru/company/ruvds/blog/442516/"><img src="https://habrastorage.org/webt/gd/jg/60/gdjg60abxgti2otxocpd0ct2uci.jpeg"></a><br>
+<br>
+В материале, перевод которого мы публикуем сегодня, мы поговорим об особенностях работы с памятью при использовании pandas, и о том, как, просто подбирая подходящие типы данных, хранящихся в столбцах табличных структур данных <code>DataFrame</code>, снизить потребление памяти почти на 90%.<br> <a href="https://habr.com/ru/post/442516/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=442516#habracut">Читать дальше →</a>
+]]>
+      </description>
+      <pubDate>Mon, 04 Mar 2019 09:10:01 GMT</pubDate>
+      <dc:creator>ru_vds</dc:creator>
+      <category>
+        <![CDATA[
+Блог компании RUVDS.com
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Big Data
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Анализ и проектирование систем
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Хранение данных
+]]>
+      </category>
+      <category>Python</category>
+      <category>pandas</category>
+      <category>анализ данных</category>
+    </item>
+    <item>
+      <title>
+        <![CDATA[
+Как сэкономить ресурсы в браузере и не сломать веб. Доклад Яндекса
+]]>
+      </title>
+      <guid isPermaLink="true">https://habr.com/ru/post/442456/</guid>
+      <link>https://habr.com/ru/post/442456/?utm_source=habrahabr&utm_medium=rss&utm_campaign=442456</link>
+      <description>
+        <![CDATA[
+Несмотря на рост производительности устройств, веб становится всё более требовательным к памяти и процессору. Правильный рендеринг и умное распределение ресурсов по вкладкам — важная часть решения этой проблемы. Константин Крамлих посвятил своё выступление на <a href="https://events.yandex.ru/events/meetings/yalovefrontend/">конференции</a> «Я Frontend» алгоритмам, которые улучшают производительность и экономят ресурсы как в проекте Chromium, так и в Яндекс.Браузере. <br>
+<br>
+Некоторые из них — например, технологию Hibernate — мы уже разбирали в <a href="https://habr.com/ru/company/yandex/blog/423507/">отдельном посте</a>. Доклад Кости освещает задачу более широко: не только с точки зрения переключения вкладок, но и с учетом методов отрисовки контента, тайлов и слоев страницы. <br>
+<br>
+Ближе к концу разработчики веб-интерфейсов могут узнать, как выявлять и решать проблемы с производительностью сайтов.<br>
+<br>
+<div class="oembed"><div><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.2493%;"><iframe src="https://www.youtube.com/embed/6OLVN_gprow?rel=0&amp;showinfo=1&amp;hl=en-US" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no"></iframe></div></div></div><br>
+— Меня зовут Костя, я руководитель группы разработки внутренних компонентов в команде Яндекс.Браузера. В Браузере я чуть больше пяти лет, занимался разными вещами: от всего декодирования в браузере, всех HTML5-видео, до отрисовки, рендеринга и других подобных процессов.<br>
+<br> <a href="https://habr.com/ru/post/442456/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=442456#habracut">Читать дальше →</a>
+]]>
+      </description>
+      <pubDate>Mon, 04 Mar 2019 08:55:59 GMT</pubDate>
+      <dc:creator>Leono</dc:creator>
+      <category>
+        <![CDATA[
+Блог компании Яндекс
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Алгоритмы
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Браузеры
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Интерфейсы
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Разработка веб-сайтов
+]]>
+      </category>
+      <category>
+        <![CDATA[
+оптимизация программ
+]]>
+      </category>
+      <category>
+        <![CDATA[
+hibernate
+]]>
+      </category>
+      <category>
+        <![CDATA[
+производительность javascript
+]]>
+      </category>
+      <category>
+        <![CDATA[
+discard
+]]>
+      </category>
+      <category>
+        <![CDATA[
+рендеринг
+]]>
+      </category>
+      <category>
+        <![CDATA[
+яндекс.браузер
+]]>
+      </category>
+      <category>
+        <![CDATA[
+тайлы
+]]>
+      </category>
+      <category>
+        <![CDATA[
+тайлинг
+]]>
+      </category>
+      <category>
+        <![CDATA[
+слои
+]]>
+      </category>
+      <category>
+        <![CDATA[
+chromium
+]]>
+      </category>
+    </item>
+    <item>
+      <title>
+        <![CDATA[
+Hackquest 2018. Results & Writeups. Day 4-7
+]]>
+      </title>
+      <guid isPermaLink="true">https://habr.com/ru/post/440312/</guid>
+      <link>https://habr.com/ru/post/440312/?utm_source=habrahabr&utm_medium=rss&utm_campaign=440312</link>
+      <description>
+        <![CDATA[
+Как и обещали, выкладываем вторую часть решений ежегодного хакквеста. Day 4-7: напряжение нарастает, а задания всё интереснее!<br>
+<img src="https://habrastorage.org/webt/oa/br/8l/oabr8lkxzurvxgw-20o0jq23hgo.jpeg"><br> <a href="https://habr.com/ru/post/440312/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=440312#habracut">Читать дальше →</a>
+]]>
+      </description>
+      <pubDate>Mon, 04 Mar 2019 02:00:02 GMT</pubDate>
+      <dc:creator>forkyforky</dc:creator>
+      <category>
+        <![CDATA[
+Блог компании «Digital Security»
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Информационная безопасность
+]]>
+      </category>
+      <category>
+        <![CDATA[
+zeronights
+]]>
+      </category>
+      <category>
+        <![CDATA[
+hackquest
+]]>
+      </category>
+      <category>
+        <![CDATA[
+ctf
+]]>
+      </category>
+    </item>
+    <item>
+      <title>
+        <![CDATA[
+Mattermost. Интеграция с внешними сервисами
+]]>
+      </title>
+      <guid isPermaLink="true">https://habr.com/ru/post/442402/</guid>
+      <link>https://habr.com/ru/post/442402/?utm_source=habrahabr&utm_medium=rss&utm_campaign=442402</link>
+      <description>
+        <![CDATA[
+<p>Выбирая замену, используемой у нас системы обмена сообщениями, наткнулся на описание Mattermost, и решил попробовать. Одним из плюсов, описываемой системы, является простая интеграция со сторонними сервисами, так называемые "хуки" (outgoing и incoming hooks). Вот про настройку взаимодействия через хуки с внешними системами и будет данная статья (в нашем конкретном случае это zabbix и glpi).</p> <a href="https://habr.com/ru/post/442402/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=442402#habracut">Читать дальше →</a>
+]]>
+      </description>
+      <pubDate>Sun, 03 Mar 2019 19:59:02 GMT</pubDate>
+      <dc:creator>svk28</dc:creator>
+      <category>
+        <![CDATA[
+DevOps
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Программирование
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Системное администрирование
+]]>
+      </category>
+      <category>
+        <![CDATA[
+php
+]]>
+      </category>
+      <category>
+        <![CDATA[
+glpi
+]]>
+      </category>
+      <category>
+        <![CDATA[
+mattermost
+]]>
+      </category>
+    </item>
+    <item>
+      <title>
+        <![CDATA[
+Первый публичный круглый стол «Нужны ли нам национальные стандарты в Интернете вещей?» — на конференции InoThings++
+]]>
+      </title>
+      <guid isPermaLink="true">https://habr.com/ru/post/442480/</guid>
+      <link>https://habr.com/ru/post/442480/?utm_source=habrahabr&utm_medium=rss&utm_campaign=442480</link>
+      <description>
+        <![CDATA[
+Привет, Хабр<br>
+<br>
+За последний год тема национальных стандартов, различных указаний госрегуляторов и прочих связанных вещей стала одной из самых обсуждаемых в российской IoT-сообществе — что, впрочем, совершенно неудивительно, достаточно посмотреть на краткий список свежих событий:<br>
+<br>
+<ul>
+<li>принятие предварительного национального стандарта на протокол NB-Fi компании «Вавиот»</li>
+<li>рекомендация Минцифры (оно же Минсвязи) при дистанционном съёме показаний приборов учёта электроэнергии пользоваться только и исключительно протоколом XNB компании «Стриж»</li>
+<li>невнятные решения ГКРЧ, провозглашающие что-то непонятное об использовании базовых станций российского производства в LPWAN-сетях</li>
+<li>напоминание РКН и ГКРЧ о порядке регистрации этих базовых станций и самих сетей</li>
+<li>долгожданное и одновременно неожиданное расширение безлицензионных диапазопов</li>
+</ul><br>
+Все эти события довольно бурно обсуждались между непосредственно причастными к рынку людьми, но наружу выплёскивались лишь отдельные сжатые скептические комментарии профессионалов IoT-рынка и безудержно оптимистичные рассказы чиновников и иных людей, всегда готовых к импортозамещению в формате «пятилетка за три года».<br>
+<br>
+Даже призванное быть публичным обсуждение проекта стандарта NB-Fi в Техническом комитете 194 Росстандарта по факту от публики оказалось полностью закрытым.<br>
+<br>
+Мы бы хотели исправить это положение.<br>
+<br>
+<img src="https://habrastorage.org/webt/8y/3m/2b/8y3m2b129ezaqpbzk7r12xfkuh4.jpeg"><br>
+<br>
+<b>Итак, на <a href="http://inothings.ru/2019">InoThings++ 2019</a> (Москва, 4 апреля) пройдёт первое настоящее публичное обсуждение темы национальных стандартов, госрегулирования и господдержки в области Интернета вещей, в котором мы постараемся и представить все возможные точки зрения со стороны докладчиков, и дать возможность слушателям задать свои вопросы.</b><br>
+<br> <a href="https://habr.com/ru/post/442480/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=442480#habracut">Читать дальше →</a>
+]]>
+      </description>
+      <pubDate>Mon, 04 Mar 2019 06:04:04 GMT</pubDate>
+      <dc:creator>olartamonov</dc:creator>
+      <category>
+        <![CDATA[
+Блог компании Конференции Олега Бунина (Онтико)
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Интернет вещей
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Разработка для интернета вещей
+]]>
+      </category>
+      <category>
+        <![CDATA[
+lorawan
+]]>
+      </category>
+      <category>
+        <![CDATA[
+nb-iot
+]]>
+      </category>
+      <category>
+        <![CDATA[
+nb-fi
+]]>
+      </category>
+      <category>
+        <![CDATA[
+xnb
+]]>
+      </category>
+      <category>
+        <![CDATA[
+стриж
+]]>
+      </category>
+      <category>
+        <![CDATA[
+вавиот
+]]>
+      </category>
+    </item>
+    <item>
+      <title>
+        <![CDATA[
+[Перевод] Как удаленка ускоряет инновации на GitLab
+]]>
+      </title>
+      <guid isPermaLink="true">https://habr.com/ru/post/442508/</guid>
+      <link>https://habr.com/ru/post/442508/?utm_source=habrahabr&utm_medium=rss&utm_campaign=442508</link>
+      <description>
+        <![CDATA[
+<h3 id="na-gitlab-udalenka-eto-ne-biznes-risk-a-konkurentnoe-preimuschestvo">На GitLab удаленка — это не бизнес-риск, а конкурентное преимущество.</h3><br>
+<p><img src="https://habrastorage.org/webt/iw/nm/oq/iwnmoqra6mgdrvidze5n43hvhqq.jpeg"><br>
+Я менеджер продуктов на GitLab. Обычно занимаюсь <a href="https://about.gitlab.com/direction/plan/">стадией планирования</a> в <a href="https://about.gitlab.com/stages-devops-lifecycle/">жизненном цикле DevOps</a>. Я пришел в ноябре 2016 и с тех пор любуюсь, какими семимильными шагами развивается GitLab как продукт и как команда. Многие новички спрашивают меня <a href="https://about.gitlab.com/company/culture/all-remote/#coffee-chats">за кофе</a> о культуре GitLab, особенно об удаленке, ведь мы <a href="https://about.gitlab.com/company/culture/all-remote/#coffee-chats">только так и работаем</a>. Со временем мои взгляды менялись, и я хочу рассказать, почему удаленка кажется мне не препятствием, а конкурентным преимуществом. Во всяком случае, для GitLab.</p> <a href="https://habr.com/ru/post/442508/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=442508#habracut">Читать дальше →</a>
+]]>
+      </description>
+      <pubDate>Mon, 04 Mar 2019 07:56:50 GMT</pubDate>
+      <dc:creator>nAbdullin</dc:creator>
+      <category>
+        <![CDATA[
+Блог компании Southbridge
+]]>
+      </category>
+      <category>
+        <![CDATA[
+DevOps
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Серверное администрирование
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Системное администрирование
+]]>
+      </category>
+      <category>gitlab</category>
+      <category>open source</category>
+      <category>remote work</category>
+      <category>project management</category>
+    </item>
+    <item>
+      <title>
+        <![CDATA[
+Корпоративная свинья
+]]>
+      </title>
+      <guid isPermaLink="true">https://habr.com/ru/post/442496/</guid>
+      <link>https://habr.com/ru/post/442496/?utm_source=habrahabr&utm_medium=rss&utm_campaign=442496</link>
+      <description>
+        <![CDATA[
+— Этот вопрос предлагаю обсудить отдельно. – сказал Евгений Викторович.<br>
+<br>
+Внезапно, в дальнем конце стола послышалось странное шуршание. Все обернулись на звук и улыбнулись.<br>
+<br>
+— Ну чего ты свинью несчастную мучаешь! – возмутилась Марина. — Оставь ее бедную задницу в покое!<br>
+<br>
+— Да, Сергей, что ты делаешь? — достаточно вежливо спросил собственник.<br>
+<br>
+— Не скажу. — пробурчал Сергей. <a href="https://habr.com/ru/post/442496/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=442496#habracut">Читать дальше →</a>
+]]>
+      </description>
+      <pubDate>Mon, 04 Mar 2019 06:08:53 GMT</pubDate>
+      <dc:creator>nmivan</dc:creator>
+      <category>
+        <![CDATA[
+Управление персоналом
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Управление продажами
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Управление продуктом
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Управление проектами
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Читальный зал
+]]>
+      </category>
+      <category>
+        <![CDATA[
+Корпоративный Ламанчский
+]]>
+      </category>
+    </item>
+  </channel>
+</rss>
