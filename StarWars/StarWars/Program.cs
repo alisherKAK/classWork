@@ -15,15 +15,21 @@ namespace StarWars
     {
         static void Main(string[] args)
         {
-            int number = ChoseNumberOfPerson();
-            int index = 0;
+            using (File.Create("file.xml")) ;
+            using (var stream = File.OpenWrite("file.xml"))
+            {
+                var serializer = new XmlSerializer(typeof(List<Character>));
+                serializer.Serialize(stream, new List<Character>());
+            }
 
-            string result = "";
-            string requestString = $@"people/{number.ToString()}/";
+            int number = ChoseNumberOfPerson(), characterNumber = 0;
             List<Character> characters = new List<Character>();
 
-            if (!IsCharacterHave(number, characters, ref index))
+            if (!IsCharacterHave("file.xml", number, ref characterNumber, characters))
             {
+                string requestString = $@"people/{number.ToString()}/";
+                string result = "";
+
                 WebRequest request = WebRequest.Create("https://swapi.co/api/" + requestString);
                 WebResponse response = request.GetResponse();
                 using (Stream stream = response.GetResponseStream())
@@ -37,30 +43,20 @@ namespace StarWars
 
                 Character newCharacter = JsonConvert.DeserializeObject<Character>(result);
 
-                var serializer = new XmlSerializer(typeof(List<Character>));
+                characters.Add(newCharacter);
 
                 using (var stream = File.Create("file.xml"))
                 {
+                    var serializer = new XmlSerializer(typeof(List<Character>));
                     serializer.Serialize(stream, characters);
                 }
-
-                Console.WriteLine($"{newCharacter.Name}\n" +
-                                  $"{newCharacter.Height}\n" +
-                                  $"{newCharacter.Mass}");
             }
-            else
-            {
-                Console.WriteLine($"{characters[index].Name}\n" +
-                                      $"{characters[index].Height}\n" +
-                                      $"{characters[index].Mass}");
-            }
-
         }
         static int ChoseNumberOfPerson()
         {
             try
             {
-                Console.WriteLine("Введите номер перонажа которого вы хотите получить");
+                Console.WriteLine("Введите номер персонажа которого вы хотите выбрать");
 
                 int number;
 
@@ -78,24 +74,27 @@ namespace StarWars
                 return ChoseNumberOfPerson();
             }
         }
-        static bool IsCharacterHave(int number, List<Character> characters, ref int index)
+        static bool IsCharacterHave(string path, int number, ref int characterNumber, List<Character> buf)
         {
-            var serializer = new XmlSerializer(typeof(List<Character>));
-            List<Character> deserializeResult;
+            List<Character> characters;
 
-            using (var stream = File.OpenRead("file.xml"))
+            using (var stream = File.OpenRead(path))
             {
-                deserializeResult = serializer.Deserialize(stream) as List<Character>;
+                var serializer = new XmlSerializer(typeof(List<Character>));
+                characters = serializer.Deserialize(stream) as List<Character>;
             }
 
-            characters = deserializeResult;
+            buf = characters;
 
-            for (int i = 0; i < deserializeResult.Count; i++)
+            if (characters.Count != Constants.NULL)
             {
-                if (deserializeResult[i].Id == number)
+                for(int i = 0; i < characters.Count; i++)
                 {
-                    index = i;
-                    return true;
+                    if(characters[i].Id == number)
+                    {
+                        characterNumber = i;
+                        return true;
+                    }
                 }
             }
 
