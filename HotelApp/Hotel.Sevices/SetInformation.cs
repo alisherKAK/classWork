@@ -1,33 +1,20 @@
-﻿using Hotel.Services.Abstract;
-using HotelConstants;
+﻿using HotelConstants;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Hotel.Sevices
 {
-    public class SetInformation
+    public static class SetInformation
     {
-        private readonly IReporter reporter;
-        private readonly IReader reader;
-
-        public SetInformation(IReporter reporter, IReader reader)
-        {
-            this.reporter = reporter;
-            this.reader = reader;
-        }
-
-        public string SetEmail()
+        public static string SetEmail()
         {
             try
             {
-                reporter.Send("Email: ");
+                Console.WriteLine("Email: ");
 
-                string email = reader.Read();
+                string email = Console.ReadLine().Trim();
 
-                if (email == "")
+                if (email == "" || !email.Contains('@'))
                 {
                     throw new ArgumentException("Email был введен неверно");
                 }
@@ -49,19 +36,19 @@ namespace Hotel.Sevices
             }
             catch (ArgumentException excepton)
             {
-                reporter.Send(excepton.Message);
+                Console.WriteLine(excepton.Message);
 
                 return SetEmail();
             }
         }
         
-        public string SetLogin()
+        public static string SetLogin()
         {
             try
             {
-                reporter.Send("Login: ");
+                Console.WriteLine("Login: ");
 
-                string login = reader.Read();
+                string login = Console.ReadLine().Trim();
 
                 if (login == "")
                 {
@@ -70,7 +57,7 @@ namespace Hotel.Sevices
 
                 for (int i = 0; i < login.Length; i++)
                 {
-                    if (!((login[i] >= 'a' && login[i] <= 'z') || (login[i] >= 'A' && login[i] <= 'Z')) || !(login[i] >= '0' && login[i] <= '9') || login[i] != '.')
+                    if (!((login[i] >= 'a' && login[i] <= 'z') || (login[i] >= 'A' && login[i] <= 'Z')) && !(login[i] >= '0' && login[i] <= '9') && login[i] != '.')
                     {
                         throw new ArgumentException("Full Name был введен неверно");
                     }
@@ -80,19 +67,19 @@ namespace Hotel.Sevices
             }
             catch (ArgumentException exception)
             {
-                reporter.Send(exception.Message);
+                Console.WriteLine(exception.Message);
 
                 return SetLogin();
             }
         }
         
-        public string SetPhoneNumber()
+        public static string SetPhoneNumber()
         {
             try
             {
-                reporter.Send("Phone Number(+7-xxx-xxx-xx-xx): ");
+                Console.WriteLine("Phone Number(+7-xxx-xxx-xx-xx): ");
 
-                string phoneNumber = reader.Read();
+                string phoneNumber = Console.ReadLine().Trim();
 
                 if (phoneNumber.Length != Constants.PHONE_LENGTH)
                 {
@@ -116,17 +103,17 @@ namespace Hotel.Sevices
             }
             catch (ArgumentException exception)
             {
-                reporter.Send(exception.Message);
+                Console.WriteLine(exception.Message);
 
                 return SetPhoneNumber();
             }
         }
         
-        public string SetPassword()
+        public static string SetPassword()
         {
             try
             {
-                reporter.Send("Password: ");
+                Console.WriteLine("Password: ");
 
                 string password = "";
 
@@ -134,10 +121,10 @@ namespace Hotel.Sevices
 
                 do
                 {
-                    key = Console.ReadKey(true);
+                    key = System.Console.ReadKey(true);
                     if (key.Key != ConsoleKey.Backspace)
                     {
-                        reporter.Send("*");
+                        Console.Write("*");
                         password += key.KeyChar;
                     }
                     else if (key.Key == ConsoleKey.Backspace)
@@ -147,19 +134,19 @@ namespace Hotel.Sevices
                             // remove one character from the list of password characters
                             password = password.Substring(0, password.Length - 1);
                             // get the location of the cursor
-                            int pos = Console.CursorLeft;
+                            int pos = System.Console.CursorLeft;
                             // move the cursor to the left by one character
-                            Console.SetCursorPosition(pos - 1, Console.CursorTop);
+                            System.Console.SetCursorPosition(pos - 1, System.Console.CursorTop);
                             // replace it with space
-                            reporter.Send(" ");
+                            Console.Write(" ");
                             // move the cursor to the left by one character again
-                            Console.SetCursorPosition(pos - 1, Console.CursorTop);
+                            System.Console.SetCursorPosition(pos - 1, System.Console.CursorTop);
                         }
                     }
 
                 } while (key.Key != ConsoleKey.Enter);
 
-                reporter.Send("");
+                Console.WriteLine("");
 
                 password = password.Trim();
 
@@ -180,7 +167,7 @@ namespace Hotel.Sevices
             }
             catch (ArgumentException exception)
             {
-                reporter.Send(exception.Message);
+                Console.WriteLine(exception.Message);
 
                 return SetPassword();
             }
