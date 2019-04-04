@@ -1,6 +1,8 @@
 ﻿using Hotel.Services.Abstract;
 using System.Diagnostics;
 using Telegram.Bot;
+using System;
+using System.Threading;
 
 namespace Hotel.Sevices
 {
@@ -23,6 +25,8 @@ namespace Hotel.Sevices
             bot.OnMessage += Bot_OnMessage;
             bot.OnMessageEdited += Bot_OnMessage;
 
+            Console.WriteLine(text);
+            Thread.Sleep(1500);
             Process.Start("https://web.telegram.org/#/im?p=@StepCodeSendMessageBot");
         }
 

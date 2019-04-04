@@ -73,6 +73,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Hotel.DataAccess\Hotel.DataAccess.csproj">
+      <Project>{20F1BDCE-9290-4C9F-87B2-A8C62AC8051E}</Project>
+      <Name>Hotel.DataAccess</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Hotel.Models\Hotel.Models.csproj">
       <Project>{F0E9F4AC-70ED-4935-AB8C-04DFD03F014C}</Project>
       <Name>Hotel.Models</Name>
