@@ -1,5 +1,6 @@
 ﻿using Hotel.DataAccess;
 using Hotel.Models;
+using Hotel.Services.Abstract;
 using Hotel.Sevices;
 using System;
 
@@ -12,19 +13,9 @@ namespace HotelApp
             //Registration();
 
             //Console.ReadLine();
-            using (TableDataService<User> tableDataService = new TableDataService<User>())
-            {
-                User user = new User()
-                {
-                    Id = 1,
-                    Login = "jhvijfvr",
-                    Password = "vhbfihnj",
-                    Email = "uhviufh@hvfi.vjir",
-                    Phone = "+77071231101"
-                };
-
-                tableDataService.DeleteById(1);
-            }
+            PayPalPayment payment = new PayPalPayment();
+            payment.PaymentWithPaypal();
+            Console.ReadLine();
         }
         static int Chose()
         {
@@ -61,11 +52,11 @@ namespace HotelApp
             };
 
 
-            TelegramBot telegramBot = new TelegramBot();
-            telegramBot.Open();
-            telegramBot.Send("Напишите боту 'Get code' чтобы плучить код");
+            ISender sender = GetSeneder.GetSender(Sender.TelegramSender);
+            sender.Open();
+            sender.Send("Напишите боту 'Get code' чтобы плучить код");
             CheckCode();
-            telegramBot.Close();
+            sender.Close();
             return user;
         }
         static void CheckCode()

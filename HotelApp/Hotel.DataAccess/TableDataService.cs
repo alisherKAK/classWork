@@ -15,13 +15,61 @@ namespace Hotel.DataAccess
             //TODO следать реализацию по созданию стандартной таблицы по укаанному типу
             Type type = typeof(T);
             var properties = type.GetProperties().ToList();
-            string query = $"create table {type.Name}s" +
+            string query = $"if not exists(select 1 from sys.tables where name='{type.Name}s')\n" +
+                           $"begin\n" +
+                           $"create table {type.Name}s\n" +
                            $"(" +
-                           $"Id int identity primary key not null,";
+                           $"Id int identity primary key not null,\n";
             for(int i = 1; i < properties.Count; i++)
             {
-                Console.WriteLine($"{properties[i].Name}, {properties[i].PropertyType.Name}");
-                string column = $"{properties[i].Name} not null";
+                string column = $"{properties[i].Name} ";
+                if(properties[i].PropertyType.Name == "String")
+                {
+                    column += $"nvarchar(50) not null check({properties[i].Name}!=''),\n";
+                }
+                else if(properties[i].PropertyType.Name == "Int32" ||
+                    properties[i].PropertyType.Name == "Int64")
+                {
+                    column += "int not null,\n";
+                    if(properties[i].Name.Contains("Id") || properties[i].Name.Contains("id"))
+                    {
+                        column = column.Trim('\n');
+                        column = column.Trim(',');
+                        column += $" references " +
+                            $"{properties[i].Name.Remove(properties[i].Name.Length - 2)}s(Id),\n";
+                    }
+                }
+                else if(properties[i].PropertyType.Name == "DateTime")
+                {
+                    column += "datetime not null,\n";
+                }
+                else if(properties[i].PropertyType.Name == "Double" ||
+                    properties[i].PropertyType.Name == "Single")
+                {
+                    column += "float not null,\n";
+                }
+                else if(properties[i].PropertyType.Name == "Boolean")
+                {
+                    column += "bit not null,\n";
+                }
+                query += column;
+            }
+            query = query.Trim('\n');
+            query = query.Trim(',');
+            query += ")\nend";
+            Console.WriteLine(query);
+            using(var command = _connection.CreateCommand())
+            {
+                command.CommandText = query;
+                try
+                {
+                    command.ExecuteNonQuery();
+                }
+                catch (DbException exception)
+                {
+                    Console.WriteLine(exception.Message);
+                    throw;
+                }
             }
         }
 
@@ -72,8 +120,8 @@ namespace Hotel.DataAccess
                 string query = $"insert into {type.Name}s values(";
                 for (int i = 1; i < properties.Length; i++)
                 {
-                    if (properties[i].GetValue(item).GetType().Name == "String" ||
-                        properties[i].GetValue(item).GetType().Name == "string")
+                    if (properties[i].PropertyType.Name == "String" ||
+                        properties[i].PropertyType.Name == "string")
                     {
                         query += $"@{properties[i].Name.ToLower()},";
                         DbParameter parameter = command.CreateParameter();
@@ -82,12 +130,21 @@ namespace Hotel.DataAccess
                         parameter.DbType = System.Data.DbType.String;
                         command.Parameters.Add(parameter);
                     }
-                    else if (properties[i].GetValue(item).GetType().Name == "Boolean")
+                    else if (properties[i].PropertyType.Name == "Boolean")
                     {
                         if ((bool)properties[i].GetValue(item) == true)
                             query += "1,";
                         else
                             query += "0,";
+                    }
+                    else if (properties[i].PropertyType.Name == "DateTime")
+                    {
+                        query += $"@{properties[i].Name.ToLower()},";
+                        DbParameter parameter = command.CreateParameter();
+                        parameter.ParameterName = $"@{properties[i].Name.ToLower()}";
+                        parameter.Value = properties[i].GetValue(item);
+                        parameter.DbType = System.Data.DbType.DateTime;
+                        command.Parameters.Add(parameter);
                     }
                     else
                     {
@@ -100,7 +157,7 @@ namespace Hotel.DataAccess
                 }
                 query = query.Trim(',');
                 query += ")";
-
+                Console.WriteLine(query);
                 command.CommandText = query;
                 try
                 {
@@ -108,7 +165,11 @@ namespace Hotel.DataAccess
                 }
                 catch (DbException exception)
                 {
-                    throw;
+                    if(exception.Message == "Invalid object name 'Tests'.")
+                    {
+                        CreateTable();
+                        Add(item);
+                    }
                 }
                 catch (Exception exception)
                 {

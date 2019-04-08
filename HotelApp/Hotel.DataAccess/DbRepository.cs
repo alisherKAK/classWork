@@ -16,9 +16,9 @@ namespace Hotel.DataAccess
 
         public DbRepository()
         {
-            _providerFactory = DbProviderFactories.GetFactory(ConfigurationManager.ConnectionStrings["DbConnectionString"].ProviderName);
+            _providerFactory = DbProviderFactories.GetFactory(ConfigurationManager.ConnectionStrings["TestDbConnectionString"].ProviderName);
             _connection = _providerFactory.CreateConnection();
-            _connection.ConnectionString = ConfigurationManager.ConnectionStrings["DbConnectionString"].ConnectionString;
+            _connection.ConnectionString = ConfigurationManager.ConnectionStrings["TestDbConnectionString"].ConnectionString;
             _connection.Open();
         }
 

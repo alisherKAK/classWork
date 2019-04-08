@@ -4,9 +4,11 @@ using Twilio.Rest.Api.V2010.Account;
 
 namespace Hotel.Sevices
 {
-    public class SmsSender : IReporter
+    public class SmsSender : ISender
     {
         public string Phone { get; set; }
+
+        public SmsSender(){}
 
         public SmsSender(string phone)
         {
@@ -26,5 +28,9 @@ namespace Hotel.Sevices
                 to: new Twilio.Types.PhoneNumber(Phone)
             );
         }
+
+        public void Open(){}
+
+        public void Close(){}
     }
 }

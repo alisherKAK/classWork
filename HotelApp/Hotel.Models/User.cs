@@ -1,4 +1,6 @@
-﻿namespace Hotel.Models
+﻿using System;
+
+namespace Hotel.Models
 {
     public class User
     {

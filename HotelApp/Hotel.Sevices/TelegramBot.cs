@@ -6,9 +6,15 @@ using System.Threading;
 
 namespace Hotel.Sevices
 {
-    public class TelegramBot : IReporter
+    public class TelegramBot : ISender
     {
         private TelegramBotClient bot = new TelegramBotClient("854986882:AAETCnIbl83piEGDyoAnizBA4eN87hE_HJo");
+
+        public TelegramBot()
+        {
+            bot.OnMessage += Bot_OnMessage;
+            bot.OnMessageEdited += Bot_OnMessage;
+        }
 
         public void Open()
         {
@@ -22,9 +28,6 @@ namespace Hotel.Sevices
 
         public void Send(string text)
         {
-            bot.OnMessage += Bot_OnMessage;
-            bot.OnMessageEdited += Bot_OnMessage;
-
             Console.WriteLine(text);
             Thread.Sleep(1500);
             Process.Start("https://web.telegram.org/#/im?p=@StepCodeSendMessageBot");
@@ -44,7 +47,6 @@ namespace Hotel.Sevices
                 {
                     CodeGenerator.GenerateCode();
                     bot.SendTextMessageAsync(e.Message.Chat.Id, CodeGenerator.Code);
-
                 }
             }
         }
