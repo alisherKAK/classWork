@@ -29,10 +29,14 @@ namespace HomeWork25_04_19.WinForm
             {
                 var users = dataService.GetAll();
 
-                foreach(User user in users)
+                List<string> usersLogin = new List<string>();
+
+                for(int i = 0; i < users.Count; i++)
                 {
-                    listBox1.Items.Add(user.Login);
+                    usersLogin.Add(users[i].Login);
                 }
+
+                listBox1.DataSource = usersLogin;
             }
         }
 
@@ -43,32 +47,36 @@ namespace HomeWork25_04_19.WinForm
 
         private void button1_Click(object sender, EventArgs e)
         {
-            UserAddForm userDeleteForm = new UserAddForm();
-            userDeleteForm.Show();
+            UserAddForm userAddForm = new UserAddForm();
+            userAddForm.Show();
+            //listBox1.DataSource = 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             int selectedItemIndex = listBox1.SelectedIndex;
 
-            using (TableDataService<User> dataService = new TableDataService<User>())
+            if (selectedItemIndex >= 0)
             {
-                var dataSet = new DataSet("ShopDb");
-                var dataAdapter = dataService.GetDataAdapter();
+                using (TableDataService<User> dataService = new TableDataService<User>())
+                {
+                    var dataSet = new DataSet("ShopDb");
+                    var dataAdapter = dataService.GetDataAdapter();
 
-                dataAdapter.Fill(dataSet, "Users");
+                    dataAdapter.Fill(dataSet, "Users");
 
-                var usersTable = dataSet.Tables["Users"];
+                    var usersTable = dataSet.Tables["Users"];
 
-                var row = usersTable.Rows[selectedItemIndex];
-                row.BeginEdit();
-                row.Delete();
-                row.EndEdit();
+                    var row = usersTable.Rows[selectedItemIndex];
+                    row.BeginEdit();
+                    row.Delete();
+                    row.EndEdit();
 
-                dataAdapter.Update(dataSet, "Users");
+                    dataAdapter.Update(dataSet, "Users");
 
-                listBox1.Items.RemoveAt(selectedItemIndex);
-                dataGridView1.Rows.Clear();
+                    listBox1.Items.RemoveAt(selectedItemIndex);
+                    dataGridView1.Rows.Clear();
+                }
             }
         }
 

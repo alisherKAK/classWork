@@ -102,6 +102,10 @@
       <Project>{C54D4E29-FE37-4876-9A90-1F6F92B4C969}</Project>
       <Name>HomeWork25_04_19.Models</Name>
     </ProjectReference>
+    <ProjectReference Include="..\HomeWork25_04_19.Sevices\HomeWork25_04_19.Sevices.csproj">
+      <Project>{C11C79BC-E5AA-4041-A60B-E6BC2C171A35}</Project>
+      <Name>HomeWork25_04_19.Sevices</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
