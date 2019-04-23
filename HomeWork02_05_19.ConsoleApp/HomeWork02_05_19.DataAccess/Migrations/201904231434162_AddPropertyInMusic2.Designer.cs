@@ -7,13 +7,13 @@ namespace HomeWork02_05_19.DataAccess.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class InitialCreate : IMigrationMetadata
+    public sealed partial class AddPropertyInMusic2 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialCreate));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AddPropertyInMusic2));
         
         string IMigrationMetadata.Id
         {
-            get { return "201904221409334_InitialCreate"; }
+            get { return "201904231434162_AddPropertyInMusic2"; }
         }
         
         string IMigrationMetadata.Source

@@ -32,7 +32,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -47,8 +54,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\HomeWork02_05_19.AbstractModels\HomeWork02_05_19.AbstractModels.csproj">
+      <Project>{89546abf-c77b-45c5-90e6-418c169b1fd1}</Project>
+      <Name>HomeWork02_05_19.AbstractModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HomeWork02_05_19.DataAccess\HomeWork02_05_19.DataAccess.csproj">
+      <Project>{2ad70ac6-8acf-47ae-beca-fac54148531c}</Project>
+      <Name>HomeWork02_05_19.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HomeWork02_05_19.Models\HomeWork02_05_19.Models.csproj">
+      <Project>{d95cb2af-099e-437e-85da-c2d42972a09a}</Project>
+      <Name>HomeWork02_05_19.Models</Name>
+    </ProjectReference>
     <ProjectReference Include="..\HomeWork02_05_19.Services\HomeWork02_05_19.Services.csproj">
       <Project>{22773979-B401-4585-930F-DCC62D6FD06A}</Project>
       <Name>HomeWork02_05_19.Services</Name>

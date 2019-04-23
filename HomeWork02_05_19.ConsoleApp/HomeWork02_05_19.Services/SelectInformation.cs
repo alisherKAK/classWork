@@ -7,6 +7,32 @@ namespace HomeWork02_05_19.Services
 {
     public static class SelectInformation
     {
+        public static List<Music> SelectAllMusic()
+        {
+            using (var context = new MusicContext())
+            {
+                return context.Musics.ToList();
+            }
+        }
+
+        public static List<Band> SelectAllBand()
+        {
+            using (var context = new MusicContext())
+            {
+                return context.Bands.ToList();
+            }
+        }
+
+        public static Band SelectBandByIndex(int index)
+        {
+            return SelectAllBand()[index];
+        }
+
+        public static Music SelectMusicByIndex(int index)
+        {
+            return SelectAllMusic()[index];
+        }
+
         public static List<Music> SelectMusicsByBandName(string bandName)
         {
             using(var context = new MusicContext())

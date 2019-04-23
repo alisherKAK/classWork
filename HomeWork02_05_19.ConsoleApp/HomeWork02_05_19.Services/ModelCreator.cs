@@ -19,7 +19,7 @@ namespace HomeWork02_05_19.Services
             Music newMusic = new Music()
             {
                 Name = SetInformation.SetMusicName(),
-                Band = band, 
+                BandId = band.Id,
                 SongDurationInSeconds = SetInformation.SetMusicDuration(),
                 Lyrics = SetInformation.SetMusicLyrics(),
                 Rating = SetInformation.SetMusicRating()
