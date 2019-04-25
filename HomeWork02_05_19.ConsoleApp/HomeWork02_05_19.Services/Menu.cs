@@ -142,7 +142,7 @@ namespace HomeWork02_05_19.Services
             {
                 foreach (Music music in context.Musics.ToList())
                 {
-                    Console.WriteLine($"{music.Name}-{music.Band.Name} {music.SongDurationInSeconds%Constants.SECOND_IN_ONE_MINUTE}:{music.SongDurationInSeconds- (music.SongDurationInSeconds % Constants.SECOND_IN_ONE_MINUTE)*Constants.SECOND_IN_ONE_MINUTE}");
+                    Console.WriteLine($"{music.Name}-{music.Band.Name} {music.SongDurationInSeconds/Constants.SECOND_IN_ONE_MINUTE}:{music.SongDurationInSeconds % Constants.SECOND_IN_ONE_MINUTE}");
                 }
             }
         }
@@ -159,7 +159,7 @@ namespace HomeWork02_05_19.Services
         {
             for(int i = 0; i < musics.Count; i++)
             {
-                Console.WriteLine($"{musics[i].Name}-{musics[i].Band.Name} {musics[i].SongDurationInSeconds % Constants.SECOND_IN_ONE_MINUTE}:{musics[i].SongDurationInSeconds -  (musics[i].SongDurationInSeconds % Constants.SECOND_IN_ONE_MINUTE) * Constants.SECOND_IN_ONE_MINUTE}");
+                Console.WriteLine($"{musics[i].Name} {musics[i].SongDurationInSeconds/Constants.SECOND_IN_ONE_MINUTE}:{musics[i].SongDurationInSeconds % Constants.SECOND_IN_ONE_MINUTE}");
             }
         }
 
@@ -172,7 +172,8 @@ namespace HomeWork02_05_19.Services
                     Console.WriteLine("Как вы вывести группы:\n" +
                                       "1) Пойск по имени\n" +
                                       "2) Вывести все\n" +
-                                      "3) Пойск по группе");
+                                      "3) Пойск по группе\n" +
+                                      "4) Вывести по рейтенгу");
 
                     int chose;
 
@@ -182,58 +183,6 @@ namespace HomeWork02_05_19.Services
                     }
 
                     throw new ArgumentException("Чило было введено неверно");
-                }
-                catch (ArgumentException exception)
-                {
-                    Console.WriteLine(exception.Message);
-                }
-            } while (true);
-        }
-
-        public static HowToShow HowToShowByNameMenu()
-        {
-            do
-            {
-                try
-                {
-                    Console.WriteLine("Как вы хотите вывести:\n" +
-                                      "1) С сортировкой по имени\n" +
-                                      "2) Без сортировки по имени");
-
-                    int howToShow;
-
-                    if(int.TryParse(Console.ReadLine().Trim(), out howToShow))
-                    {
-                        return (HowToShow)howToShow;
-                    }
-
-                    throw new ArgumentException("Число было введено неверно");
-                }
-                catch (ArgumentException exception)
-                {
-                    Console.WriteLine(exception.Message);
-                }
-            } while (true);
-        }
-
-        public static HowToShow HowToShowByBandMenu()
-        {
-            do
-            {
-                try
-                {
-                    Console.WriteLine("Как вы хотите вывести:\n" +
-                                      "1) С сортировкой по группе\n" +
-                                      "2) Без сортировки по группе");
-
-                    int howToShow;
-
-                    if (int.TryParse(Console.ReadLine().Trim(), out howToShow))
-                    {
-                        return (HowToShow)howToShow;
-                    }
-
-                    throw new ArgumentException("Число было введено неверно");
                 }
                 catch (ArgumentException exception)
                 {

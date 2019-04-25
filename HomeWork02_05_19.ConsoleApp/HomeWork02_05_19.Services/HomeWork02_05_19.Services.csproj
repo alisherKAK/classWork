@@ -49,11 +49,9 @@
   <ItemGroup>
     <Compile Include="Actions.cs" />
     <Compile Include="Constants.cs" />
-    <Compile Include="HowToShow.cs" />
     <Compile Include="Menu.cs" />
     <Compile Include="ModelCreator.cs" />
     <Compile Include="Models.cs" />
-    <Compile Include="SaveModelsInDataBase.cs" />
     <Compile Include="SelectInformation.cs" />
     <Compile Include="SetInformation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

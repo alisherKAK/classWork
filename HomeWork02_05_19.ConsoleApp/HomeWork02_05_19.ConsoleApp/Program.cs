@@ -23,8 +23,7 @@ namespace HomeWork02_05_19.ConsoleApp
                         switch (Menu.AddMenu())
                         {
                             case Services.Models.Band:
-                                var band = ModelCreator.CreateBand();
-                                SaveModelsInDataBase.SaveBand(band);
+                                ModelCreator.CreateAndSaveBand();
                                 break;
                             case Services.Models.Music:
                                 do
@@ -32,15 +31,13 @@ namespace HomeWork02_05_19.ConsoleApp
                                     try
                                     {
                                         var musicsBand = SelectInformation.SelectBandByIndex(Menu.BandSelectMenu());
-                                        var music = ModelCreator.CreateMusic(musicsBand);
-                                        SaveModelsInDataBase.SaveMusic(music);
+                                        ModelCreator.CreateAndSaveMusic(musicsBand.Id);
                                         break;
                                     }
                                     catch(ArgumentOutOfRangeException)
                                     {
                                         Console.WriteLine("Добвление новой группы:");
-                                        var newBand = ModelCreator.CreateBand();
-                                        SaveModelsInDataBase.SaveBand(newBand);
+                                        ModelCreator.CreateAndSaveBand();
                                     }
                                     catch(IndexOutOfRangeException)
                                     {
@@ -66,18 +63,35 @@ namespace HomeWork02_05_19.ConsoleApp
                                         Menu.ShowAllMusics();
                                         break;
                                     case Constants.SHOW_BY_NAME:
+                                        Band musicBand = new Band();
                                         string musicName = SetInformation.SetMusicName();
-                                        var musics = SelectInformation.SelectMusicsByName(musicName);
-                                        Menu.ShowMusics(musics);
+                                        var music = SelectInformation.SelectMusicsByName(musicName, musicBand);
+                                        Menu.ShowMusics(new List<Music>() { music});
                                         break;
                                     case Constants.SHOW_BY_BAND:
-                                        using (var context = new MusicContext())
+                                        var bands = SelectInformation.SelectAllBand();
+                                        var band = bands[Menu.BandSelectMenu()];
+                                        var selectedMusics = SelectInformation.SelectMusicsByBandName(band.Name);
+                                        Menu.ShowMusics(selectedMusics);
+                                        break;
+                                    case Constants.SHOW_BY_RATING:
+                                        switch (Menu.ChoseSortTypeMenu())
                                         {
-                                            var bands = context.Bands.ToList();
-                                            Menu.ShowMusics(SelectInformation.SelectMusicsByBandName(bands[Menu.BandSelectMenu()].Name));
+                                            case SortType.Ascending:
+                                                var sortedMusicAscending = SortingService.SortMusicAscendingRating(SelectInformation.SelectAllMusic());
+                                                Menu.ShowMusics(sortedMusicAscending);
+                                                break;
+                                            case SortType.Descending:
+                                                var sortedMusicDescending = SortingService.SortMusicDescendingRating(SelectInformation.SelectAllMusic());
+                                                Menu.ShowMusics(sortedMusicDescending);
+                                                break;
+                                            default:
+                                                Console.WriteLine("Нет такого типа сортировки");
+                                                break;
                                         }
                                         break;
                                     default:
+                                        Console.WriteLine("Выберите из предложенных вариантов");
                                         break;
                                 }
                                 break;

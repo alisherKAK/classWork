@@ -10,5 +10,6 @@
         public const int SHOW_BY_NAME = 1;
         public const int SHOW_ALL = 2;
         public const int SHOW_BY_BAND = 3;
+        public const int SHOW_BY_RATING = 4;
     }
 }

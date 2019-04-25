@@ -11,7 +11,8 @@ namespace HomeWork02_05_19.Services
         {
             using (var context = new MusicContext())
             {
-                return context.Musics.ToList();
+                var musics = context.Musics.ToList();
+                return musics;
             }
         }
 
@@ -37,15 +38,18 @@ namespace HomeWork02_05_19.Services
         {
             using(var context = new MusicContext())
             {
-                return context.Bands.Where(band => band.Name == bandName).SingleOrDefault().Musics as List<Music>;
+                var searchedBand = context.Bands.Where(band => band.Name == bandName).SingleOrDefault();
+                return context.Musics.Where(music => music.Band.Id == searchedBand.Id).ToList();
             }
         }
 
-        public static List<Music> SelectMusicsByName(string musicName)
+        public static Music SelectMusicsByName(string musicName, Band band)
         {
             using(var context = new MusicContext())
             {
-                return context.Musics.Where(music => music.Name == musicName).ToList();
+                var mus = context.Musics.Where(music => music.Name == musicName).SingleOrDefault();
+                band = mus.Band;
+                return mus;
             }
         }
 

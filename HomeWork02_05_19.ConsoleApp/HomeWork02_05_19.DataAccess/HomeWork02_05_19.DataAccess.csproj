@@ -49,33 +49,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201904231407416_InitialCreate.cs" />
-    <Compile Include="Migrations\201904231407416_InitialCreate.Designer.cs">
-      <DependentUpon>201904231407416_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201904231419315_AddPropertyInMusic.cs" />
-    <Compile Include="Migrations\201904231419315_AddPropertyInMusic.Designer.cs">
-      <DependentUpon>201904231419315_AddPropertyInMusic.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201904231428157_DeletePropertyInMusic.cs" />
-    <Compile Include="Migrations\201904231428157_DeletePropertyInMusic.Designer.cs">
-      <DependentUpon>201904231428157_DeletePropertyInMusic.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201904231432193_AddPropertyInMusic1.cs" />
-    <Compile Include="Migrations\201904231432193_AddPropertyInMusic1.Designer.cs">
-      <DependentUpon>201904231432193_AddPropertyInMusic1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201904231434162_AddPropertyInMusic2.cs" />
-    <Compile Include="Migrations\201904231434162_AddPropertyInMusic2.Designer.cs">
-      <DependentUpon>201904231434162_AddPropertyInMusic2.cs</DependentUpon>
+    <Compile Include="Migrations\201904251504166_InitialCreate.cs" />
+    <Compile Include="Migrations\201904251504166_InitialCreate.Designer.cs">
+      <DependentUpon>201904251504166_InitialCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MusicContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\HomeWork02_05_19.Models\HomeWork02_05_19.Models.csproj">
@@ -84,20 +64,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201904231407416_InitialCreate.resx">
-      <DependentUpon>201904231407416_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904231419315_AddPropertyInMusic.resx">
-      <DependentUpon>201904231419315_AddPropertyInMusic.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904231428157_DeletePropertyInMusic.resx">
-      <DependentUpon>201904231428157_DeletePropertyInMusic.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904231432193_AddPropertyInMusic1.resx">
-      <DependentUpon>201904231432193_AddPropertyInMusic1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904231434162_AddPropertyInMusic2.resx">
-      <DependentUpon>201904231434162_AddPropertyInMusic2.cs</DependentUpon>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201904251504166_InitialCreate.resx">
+      <DependentUpon>201904251504166_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
