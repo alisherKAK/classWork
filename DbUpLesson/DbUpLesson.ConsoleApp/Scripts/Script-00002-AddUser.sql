@@ -1,0 +1,1 @@
+﻿insert into Users values(NEWID(), 'admin', '12345')
